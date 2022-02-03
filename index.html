@@ -23,6 +23,7 @@
   backdrop-filter: hue-rotate(10deg);
   }
   .alignment{
+  
   justify-content: center;
   padding-top: 50px;
   padding-right: 80px;
@@ -30,6 +31,7 @@
   padding-left: 180px;
   }
   .Background{
+  box-shadow: 5px 5px 13px rgb(150, 145, 145);
   padding-top: 50px;
   padding-right: 80px;
   padding-bottom: 300px;
@@ -116,7 +118,7 @@
     <input id="input" type="text" value="" tex placeholder="Type something here...">
   <div class="flex jc-center">
     <button class="buttons to-do" onclick="getText()"> Add To-Do </button>
-    <button class="buttons reset">Click to Reset</button>
+    <button onclick="removeText()" class="buttons reset">Click to Reset</button>
   </div>
   
   <ul id="to-do-list">
