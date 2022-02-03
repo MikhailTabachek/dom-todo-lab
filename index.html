@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="/js/app.js"></script>
+  <style> 
+  body {
+    background-image: url(https://thumbs.dreamstime.com/z/small-abstract-symbols-drawn-pen-white-background-variety-flourishes-142946812.jpg);
+  }
+  #top {
+  text-align: center;
+  font-size: 45px;
+  color: rgb(126, 26, 26);
+  text-shadow: 1px 1px black;
+  border: rgb(170, 9, 9);
+  border-style: double;
+  margin-left: auto;
+  margin-top: 30px;
+  padding-left: 0% ;
+  background-color: rgb(250, 246, 240);
+  backdrop-filter: hue-rotate(10deg);
+  }
+  .alignment{
+  justify-content: center;
+  padding-top: 50px;
+  padding-right: 80px;
+  padding-bottom: 10px;
+  padding-left: 180px;
+  }
+  .Background{
+  padding-top: 50px;
+  padding-right: 80px;
+  padding-bottom: 300px;
+  padding-left: 80px;
+  border-style: solid;
+  border-radius: 15px;
+  background-image:url('https://image.shutterstock.com/z/stock-photo-high-quality-white-crumpled-paper-texture-background-528901429.jpg');
+
+  }
+  #input{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 40px;
+    border-style: groove;
+    border-radius: 15px;
+    font-weight:lighter;
+    font-size: 30px;
+    text-align: center;
+  }
+  .buttons{
+  margin-left: 20px;
+  margin-top: auto;
+  padding: 0.8rem;
+	width: 150px;
+	border-radius: 10px;
+	background: rgb(185, 241, 120);
+	outline: none;
+	border-color: rgb(179, 93, 93);
+	border: 3px thin ;
+	cursor: pointer;
+  font-size: 20px;
+  }
+  #to-do-list{
+    background-color: blanchedalmond;
+    text-align: left;
+    margin-left: 280px;
+    margin-right: 280px;
+    font-size: 25px;
+    border: black;
+    border-style: solid;
+    border-radius: 6px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+  .flex{
+    display: flex;
+  }
+  .jc-center{
+    justify-content: center;
+  }
+  .reset {
+    background-color: rgb(245, 53, 53);
+    color:cornsilk;
+    padding: 13px 10px;
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+  .box{
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20px;
+  padding-right: 80px;
+  padding-bottom: 60px;
+  padding-left: 65px;
+  border-style: solid;
+  border-radius: 15px;
+  margin-left: 150px;
+  margin-right: 15%;
+  }
+  .clippy {
+  object-fit: contain;
+  width: 7%;
+  margin-left: 6px;
+  }
+
+  </style>
+  <title>DOM To-Do-Lab</title>
+</head>
+  <body>
+    <div class="alignment">
+    <h1 id="top"> DOM To Do Lab! </h1>
+    <div class="Background">
+    <input id="input" type="text" value="" tex placeholder="Type something here...">
+  <div class="flex jc-center">
+    <button class="buttons to-do" onclick="getText()"> Add To-Do </button>
+    <button class="buttons reset">Click to Reset</button>
+  </div>
+  
+  <ul id="to-do-list">
+    <li class="test"> Test </li>
+  </ul>
+</div>
+<img src="https://png2.cleanpng.com/sh/b2d167c2d3b2b69234fe0ab1a3d7eacf/L0KzQYm3WMI0N5RskJH0aYP2gLBuTf9nbppofZ9qc4Psg8XojwQudZpoitH8b3b3PbT2kwBwepJ5gdH3LX3sc8P2kB9nfF50Rd9yY4Lyg7FtlL1wbpdue9c2Mj20SX76TfNpNZkyjOQ2dILxPYbpVBU1PWhrTqkANUO3Pom9UsU6QGQ9Sac8NUCzQYqBU8QzO2QziNDw/kisspng-office-assistant-microsoft-corporation-microsoft-o-microsoft-office-2-19-s-ch-h-tr-trn-5b7e457f675534.8625983815350019834233.png" alt="" class="clippy">
+</div>
+</body>
+</html>
