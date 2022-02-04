@@ -53,7 +53,7 @@
     text-align: center;
   }
   .buttons{
-  margin-left: 20px;
+  margin-left: 0;
   margin-top: auto;
   padding: 0.8rem;
 	width: 150px;
@@ -65,14 +65,16 @@
 	cursor: pointer;
   font-size: 20px;
   }
-  #to-do-list{
-    background-color: blanchedalmond;
+  .to-do-list{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    background-color: rgb(255, 255, 255);
     text-align: left;
     margin-left: 280px;
     margin-right: 280px;
     font-size: 25px;
     border: black;
-    border-style: solid;
+    border-style:dotted;
+    border-width: 1px;
     border-radius: 6px;
     padding-top: 10px;
     padding-bottom: 5px;
@@ -108,6 +110,15 @@
   margin-left: 6px;
   }
 
+  #to-do-header {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 1px 1px 2px rgb(148, 136, 136);
+  font-size: 30px;
+  text-decoration-color: rgb(10, 10, 10);
+  text-decoration: underline;
+  }
+
   </style>
   <title>DOM To-Do-Lab</title>
 </head>
@@ -117,13 +128,12 @@
     <div class="Background">
     <input id="input" type="text" value="" tex placeholder="Type something here...">
   <div class="flex jc-center">
-    <button class="buttons to-do" onclick="getText()"> Add To-Do </button>
-    <button onclick="removeText()" class="buttons reset">Click to Reset</button>
+    <button class="buttons to-do" onclick="addText()"> Add To-Do </button>
+    <button onclick="reset()" class="buttons reset">Click to Reset</button>
   </div>
-  
+  <p id="to-do-header">This is your To-Do list </p>
   <ul id="to-do-list">
-    <li class="test"> Test </li>
-  </ul>
+</ul>
 </div>
 <img src="https://png2.cleanpng.com/sh/b2d167c2d3b2b69234fe0ab1a3d7eacf/L0KzQYm3WMI0N5RskJH0aYP2gLBuTf9nbppofZ9qc4Psg8XojwQudZpoitH8b3b3PbT2kwBwepJ5gdH3LX3sc8P2kB9nfF50Rd9yY4Lyg7FtlL1wbpdue9c2Mj20SX76TfNpNZkyjOQ2dILxPYbpVBU1PWhrTqkANUO3Pom9UsU6QGQ9Sac8NUCzQYqBU8QzO2QziNDw/kisspng-office-assistant-microsoft-corporation-microsoft-o-microsoft-office-2-19-s-ch-h-tr-trn-5b7e457f675534.8625983815350019834233.png" alt="" class="clippy">
 </div>
